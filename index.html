@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bnk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <title>The Bank</title>
+    </head>
+<body>
+<div id="bod">
+<!--frist page-->
+<div id="cover">
+    <p class="comp"> <img id="logo" src="avlogo .png" alt="">BANK</p>
+    <div id="bwrp">
+        <div id="wrapper">
+        <div id="box">
+            <p id="te">INSERT YOUR CARD FIRST</p>
+            <img id="tbox" src="atminstop.png" alt="">
+        </div>
+        <div >
+            <img id="card" src="deb card.png" alt="">
+        </div>
+
+        <button id="insert">INSERT</button>
+        </div>
+    <div id="wrap">
+        <p id="tte">Enter your Name & Pin</p>
+        <input id="cardn" type="text" placeholder="Enter Name">
+        <input id="pin" type="password" placeholder="Enter Pin">
+        <div id="btns">
+            <button class="bk"id="bk" value="0" onclick="next()">Next</button>
+            <button class="btn"id="btnc" >Clear</button>
+        </div>
+        <p id="ver" class="verfi"></p>
+    </div>
+</div>
+    
+   
+</div>
+<!--frist pageend-->
+<!--Second Page Start-->
+    <div id="bank">
+        <section>
+            <div id="cliknbal">
+                <div id="info">
+                    <div id="bal">0</div>
+                    <input id="inp" type="text" placeholder="ENTER AMOUNT">
+                    <button id="with">Withdraw</button>
+                    <button id="balance">Balance</button>
+                    <button id="dep">Deposit</button>
+                    <a id="thi" href="#last">Account <br>Statement</a>  
+                </div>
+
+            </div>
+            <div id="message">
+                <p id="title">Message</p>
+                <p id="Cdetail"></p>
+                <p id="transaction"></p>
+                <p id="wtransaction"></p>
+                <p id="tbalance"></p>
+            </div>
+        </section>
+
+    </div>
+<!--Second Page End-->
+<!--Third Page Start-->
+    <div id="last">
+        <div id="rol">            
+        <button id="As" onclick="Statement()">CLICK TO VIEW ACCOUNT STATEMENT</button>
+        <div id="hi" class="h">Loading....</div>
+        <button id="clr" onclick="cler()">Click To Colapse/Expand</button>
+        <button id="ref" onclick="first()">Home</button>
+        </div>
+    </div>
+<!--Third Page End-->
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>
